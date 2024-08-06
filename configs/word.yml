@@ -1,0 +1,59 @@
+data:
+    dataset: "WORD2"
+    image_size: [64, 128]
+    channels: 4
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: false
+    rescaled: true
+    num_workers: 4
+
+model:
+    type: "simple"
+    in_channels: 7
+    out_ch: 4
+    ch: 128
+    ch_mult: [1, 2, 2, 2]
+    num_res_blocks: 2
+    attn_resolutions: [16, 32, 64]
+    dropout: 0.1
+    var_type: fixedlarge
+    ema_rate: 0.9999
+    ema: True
+    resamp_with_conv: True
+    word_emb_len: 15
+    word_emb_size: 26
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+
+training:
+    batch_size: 32
+    n_epochs: 400
+    n_iters: 5000000
+    snapshot_freq: 10000
+    validation_freq: 20000
+    alpha: 0.1
+
+sampling:
+    batch_size: 1
+    last_only: True
+    total_sample_num : 100
+    ckpt_id: 1780000
+
+test:
+    diffusion_step: 1000
+
+optim:
+    weight_decay: 0.000
+    optimizer: "Adam"
+    lr: 0.0002
+    beta1: 0.9
+    amsgrad: false
+    eps: 0.00000001
+    grad_clip: 1.0
+
