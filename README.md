@@ -27,7 +27,7 @@ The real data we used to fine-tune the UIBR module is stored in /data/. We show 
 The download links for more test datasets are as follows: [ICDAR2013](https://paperswithcode.com/dataset/icdar-2013), [COCOText](https://paperswithcode.com/dataset/coco-text), [TextOCR](https://paperswithcode.com/dataset/textocr),[SVT](https://paperswithcode.com/dataset/svt).
 
 ### 5. Download pretrained models
-Download the [trained models](https://drive.google.com/file/d/1--VejuQEBgUExImv7KWMGFtlqYgoSPzG/view?usp=sharing) to `pretrained/`.
+Download the [trained models]([https://drive.google.com/file/d/1--VejuQEBgUExImv7KWMGFtlqYgoSPzG/view?usp=sharing](https://drive.google.com/drive/folders/19d5rNgJ6jDmqN3tBEIDlwamB3AEtjJes?usp=sharing) to `pretrained/`.
 ## Run codes
 
 ### Test models
@@ -37,7 +37,7 @@ Step1: The target text and the style of the text within the guide image, represe
 $ python step1_SGTC_infer.py --text YOUR_TARGET_TEXT --image_folder YOUR_IMAGE_PATH  --exp YOUR_OUTPUT_PATH --sample True
 ```
 
-Step2:  An image $x_{style}$ requiring scene text editing and a mask image $x_{mask}$ delineating the area to be edited are inputted, and the background-reconstructed image $x_{bc}$ is obtained using the Unified Instruction-based Background Reconstruction Module.
+Step2: An image $x_{style}$ requiring scene text editing and a mask image $x_{mask}$ delineating the area to be edited are inputted, and the background-reconstructed image $x_{bc}$ is obtained using the Unified Instruction-based Background Reconstruction Module.
 ```bash
 $ python step2_UIBR_infer.py --image_root YOUR_IMAGE_PATH --mask_root YOUR_MASK_PATH --save_root YOUR_OUTPUT_PATH 
 ```
