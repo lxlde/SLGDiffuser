@@ -27,7 +27,7 @@ The real data we used to fine-tune the UIBR module is stored in /data/. We show 
 The download links for more test datasets are as follows: [ICDAR2013](https://paperswithcode.com/dataset/icdar-2013), [COCOText](https://paperswithcode.com/dataset/coco-text), [TextOCR](https://paperswithcode.com/dataset/textocr),[SVT](https://paperswithcode.com/dataset/svt).
 
 ### 5. Download pretrained models
-Download the [trained models]([https://drive.google.com/file/d/1--VejuQEBgUExImv7KWMGFtlqYgoSPzG/view?usp=sharing](https://drive.google.com/drive/folders/19d5rNgJ6jDmqN3tBEIDlwamB3AEtjJes?usp=sharing))to `pretrained/`.
+Download the [trained models]([https://drive.google.com/file/d/1--VejuQEBgUExImv7KWMGFtlqYgoSPzG/view?usp=sharing](https://drive.google.com/drive/folders/19d5rNgJ6jDmqN3tBEIDlwamB3AEtjJes?usp=sharing) to `pretrained/`.
 ## Run codes
 
 ### Test models
